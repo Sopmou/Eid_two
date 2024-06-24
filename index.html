@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lammbestellung</title>
+    <style>
+        /* Füge hier dein CSS hinzu */
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        input, select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lammbestellung</h1>
+    <p id="customText">Hier kommt dein individueller Text hin.</p>
+    <p>Verfügbare Lämmer: <span id="lambCount">0</span></p>
+    <form id="lambOrderForm">
+        <label for="firstName">Vorname:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Nachname:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="pickupPerson">Wer holt das Lamm ab:</label>
+        <input type="text" id="pickupPerson" name="pickupPerson" required>
+
+        <label for="pickupDate">Abholtermin:</label>
+        <select id="pickupDate" name="pickupDate" required>
+            <option value="date1">Datum 1</option>
+            <option value="date2">Datum 2</option>
+            <option value="date3">Datum 3</option>
+            <option value="date4">Datum 4</option>
+        </select>
+
+        <button type="submit">Bestellen</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
