@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     async function fetchLambCount() {
         try {
-            const response = await fetch('https://https://eid-two-git-main-sopmous-projects.vercel.app//api/lamb-count');
+            const response = await fetch('https://eid-two.vercel.app/api/lamb-count');
             const text = await response.text();  // Ändere hier, um den Text zu lesen
             console.log('Serverantwort:', text); // Logge die Serverantwort
             const data = JSON.parse(text);       // Versuche, den Text als JSON zu parsen
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = Object.fromEntries(formData.entries());
         
         try {
-            const response = await fetch('https://eid-two-git-main-sopmous-projects.vercel.app/api/lamb-count', {
+            const response = await fetch('https://eid-two.vercel.app/api/lamb-count', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
