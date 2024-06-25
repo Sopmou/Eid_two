@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     async function fetchLambCount() {
         try {
-            const response = await fetch('https://deine-server-url.com/api/lamb-count');
+            const response = await fetch('eid-two.vercel.app/api/lamb-count');
             const data = await response.json();
             lambCountElement.textContent = data.count;
         } catch (error) {
