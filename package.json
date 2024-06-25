@@ -1,5 +1,5 @@
 {
-  "name": "cd-lamb-order-server",
+  "name": "lamb-order-server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
