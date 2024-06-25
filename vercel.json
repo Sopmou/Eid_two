@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": ,
   "builds": [
     {
       "src": "server.js",
