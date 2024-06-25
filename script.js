@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const lambCountElement = document.getElementById('availableLambs');
-    const form = document.getElementById('lambOrderForm');
+    const form = document.getElementById('pickupDates');
     
     async function fetchLambCount() {
         try {
